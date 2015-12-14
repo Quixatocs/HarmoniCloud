@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+/*background and colors*/
+body {
+  background-color: #fafafa;
+}
+/*links*/
+body a:link  {
+  color: #303232;
+}
+body a:visited {
+  color: #303232;
+}
+body a:hover {
+  color: #FF1493;
+  text-decoration: none;
+}
+body a:active {
+  color: #FF1493;
+}
+html {
+	height: 900px;
+  width: 100%;
+}
+/*typography*/
+h1 h2 h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	letter-spacing: 0.05em;
+	font-weight: 100;
+	-webkit-margin-before: 0;
+	text-transform: uppercase;
+  text-align: center;
+}
+h4 {
+  font-family: 'Source Sans Pro', serif !important;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+  text-transform: uppercase;
+}
+p {
+	text-align: justify;
+	color: #303232;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+}
+footer {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #ededed;
+  z-index: 1;
+  overflow: hidden;
+}
+#footerlist li {
+  display: inline;
+  list-style-type: none;
+  font-family: 'Source Sans Pro', serif !important;
+  letter-spacing: 0.05em;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-right: 50px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+#footerlist {
+  margin-bottom: 0;
+}
+#footerhr {
+  width: 75%;
+  border: 1px solid #cdcdcd;
+}
+#footerrow {
+    display: block;
+  margin: 30px auto;
+  text-align: center;
+}
+#footerrow p {
+    display: block;
+  margin: 30px auto;
+  text-align: center;
+}
+#copyright p {
+  text-align: center;
+  color: #c6c6c6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#banner {
+  background: url("http://universe-beauty.com/albums/space/Star-field-of-Constellation-Scorpius.JPG") center center no-repeat;
+  background-size: cover;
+  height: 100vH;
+  position: relative;
+  overflow: hidden;
+}
+#banner hr {
+  width: 40%;
+}
+#bannertext1 {
+  margin: auto;
+  padding: 100px 60px;
+  display:block;
+  color: white;
+}
+#bannercon {
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  display:block;
+  padding: 100px 60px;
+}
+#bannercon h1 {
+  font-family: 'Fjalla One', sans-serif !important;
+  font-size: 8em;
+  font-style: bold;
+  color: white;
+}
+#bannercon p {
+  text-align: center;
+  color: #FF1493;
+}
+#bannerbtn {
+  vertical-align: center;
+  margin:0 auto;
+  display:block;
+  background-color: transparent;
+  color: #fafafa;
+}
+.btn-default a:hover { 
+  color: #FF1493;
+}
+li, a {
+    display:inline-block;
+    text-align:center;
+}
+a:hover {
+    font-weight:bold;
+}
+a::after {
+    display:block;
+    content:attr(title);
+    font-weight:bold;
+    height:1px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+    margin-bottom:-1px;
+}

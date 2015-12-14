@@ -1,6 +1,4 @@
 
-// huw's test comment
-
 $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
 });

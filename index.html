@@ -33,7 +33,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-
+<!--
     <script>
       Webflow.push(function () {
         var fulls = $('.full-page');
@@ -43,6 +43,7 @@
         });
       });
     </script>
+  -->
 
     <!-- Bootstrap core CSS -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -60,9 +61,25 @@
         <h1>HarmoniCloud</h1> 
        
           <p>magical stuff will go here</p>
+
+          <!-- Huw's test Script-->
+
           <script type="text/javascript">
-            var generator = new SingleLine();
-            generator.play();
+
+            
+                var sound = new Howl({
+                  urls: ['audio/Bass01.mp3'],
+                  //autoplay: true,
+                  loop: true,
+                  volume: 0.5,
+                    onend: function() {
+                      alert('Finished!');
+                    }
+                });
+
+ 
+            // var generator = new SingleLine();
+            // generator.play();
           </script>
           
       

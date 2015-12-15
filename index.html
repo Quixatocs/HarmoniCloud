@@ -62,29 +62,34 @@
        
           <p>magical stuff will go here</p>
 
-          <!-- Huw's test Script-->
 
-          <script type="text/javascript">
-
-            
-                var sound = new Howl({
-                  urls: ['audio/Bass01.mp3'],
-                  //autoplay: true,
-                  loop: true,
-                  volume: 0.5,
-                    onend: function() {
-                      alert('Finished!');
-                    }
-                });
-
- 
-            // var generator = new SingleLine();
-            // generator.play();
-          </script>
           
       
       </div>
     </div>
+
+    <!-- Huw's test Script-->
+
+    <script type="text/javascript">
+
+      function oneBassHit() {
+        var audioFile = ['audio/BassSat11.mp3',
+                         'audio/BassSat12.mp3',
+                         'audio/BassSat13.mp3',
+                         'audio/BassSat14.mp3'];
+        var chosen = Math.floor(Math.random() * audioFile.length);
+        var sound = new Howl({
+          urls: [audioFile[chosen]],
+          autoplay: true,
+          //loop: true,
+          //volume: 0.5,
+            onend: function() {
+              oneBassHit();
+            }
+        });
+      };
+      oneBassHit();
+    </script>
 
   </body>
 

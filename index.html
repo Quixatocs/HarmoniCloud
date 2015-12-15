@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <title>HarmoniCloud</title>
 
+    <!--Dependant libraries-->
+
     <!--jQuery Script-->
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <!--howler.js Script-->
+    <script src="js/libraries/goldfire/howler/howler.min.js"></script>
+
+    <!--SingleLine.js Script-->
+    <script src="js/audio/SingleLine.js"></script>
+    <!-- This calls the generateMelodyline function-->
+    <script type="text/javascript" src="js/audio/LineGenerator.js"></script> 
 
     <!--bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -50,10 +60,11 @@
         <h1>HarmoniCloud</h1> 
        
           <p>magical stuff will go here</p>
-
-          <!-- This calls the generateMelodyline function--> 
-
-          <script type="text/javascript" src="js/generateMelodyLine.js"></script>
+          <script type="text/javascript">
+            var generator = new SingleLine();
+            generator.play();
+          </script>
+          
       
       </div>
     </div>
